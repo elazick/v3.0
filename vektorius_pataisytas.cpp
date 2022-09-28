@@ -71,9 +71,9 @@ int main() {
 			}
 			
 			//savikontrole
-			for (int j = 0; j < stud[count].pazymiai.size(); j++) {
-				std::cout << stud[count].pazymiai[j] << std::endl;
-			}
+			//for (int j = 0; j < stud[count].pazymiai.size(); j++) {
+				//std::cout << stud[count].pazymiai[j] << std::endl;
+			//}
 
 		}
 		else {
@@ -82,15 +82,14 @@ int main() {
 		}
 		
 		//savikontrole
-		for (int j = 0; j < stud[count].pazymiai.size(); j++) {
-			std::cout << stud[count].pazymiai[j] << std::endl;
-		}									
+		//for (int j = 0; j < stud[count].pazymiai.size(); j++) {
+			//std::cout << stud[count].pazymiai[j] << std::endl;
+		//}									
 		
 		std::cout << "Ar vesite dar duomenu?(T/N): ";
 		std::cin >> renkuosi;
 		if (renkuosi == "T" || renkuosi == "t") {
 			count++;
-			//duom.pazymiai.clear();
 			pasirinkimas1 = true;			
 		}
 		else if (renkuosi == "N" || renkuosi == "n") {
@@ -105,7 +104,6 @@ int main() {
 	std::cout << "Mediana ar vidurkis?(M/V)";
 	std::cin >> renkuosi;
 	if (renkuosi == "M" || renkuosi == "m") {	
-		//stud.push_back(duom);
 		for (int i = 0; i < stud.size(); i++) {
 			sort(stud[i].pazymiai.begin(), stud[i].pazymiai.end());			
 			if (stud[i].pazymiai.size() % 2 != 0) {
