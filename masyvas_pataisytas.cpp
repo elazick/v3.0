@@ -89,9 +89,9 @@ int main() {
 			}
 			
 			//savikontrole
-			for (int j = 0; j < stud[count].n - 1; j++) {
-				std::cout << stud[count].pazymiai[j] << std::endl;
-			}
+			//for (int j = 0; j < stud[count].n - 1; j++) {
+				//std::cout << stud[count].pazymiai[j] << std::endl;
+			//}
 
 		}
 		else {
@@ -100,9 +100,9 @@ int main() {
 		}
 		
 		//savikontrole
-		for (int j = 0; j < stud[count].n; j++) {
-			std::cout << stud[count].pazymiai[j] << std::endl;
-		}									
+		//for (int j = 0; j < stud[count].n; j++) {
+			//std::cout << stud[count].pazymiai[j] << std::endl;
+		//}									
 		
 		std::cout << "Ar vesite dar duomenu?(T/N): ";
 		std::cin >> renkuosi;
@@ -113,7 +113,6 @@ int main() {
 			std::copy(stud, stud + std::min(n - 1, n), naujas);
 			delete[] stud;
 			stud = naujas;
-			//duom.pazymiai.clear();
 			pasirinkimas1 = true;			
 		}
 		else if (renkuosi == "N" || renkuosi == "n") {
