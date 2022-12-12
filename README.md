@@ -8,11 +8,11 @@ Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
 4. Spartos testas(v0.4)
 5. Spartos testas su skirtingais algoritmais(v0.5)
 
--Norima funkcija pasirenkama įvedant atitinkamą numerį
--Vartotojui pateikiami pasirinkimai: (V/M) - čia "V" arba "v" - vidurkis, "M" arba "m" - mediana; (P/A) - čia "P" arba "p" - patys, "A" arba "a" - atsitiktinai; (T/N) - čia "T" arba "t" - taip, "N" arba "n" - ne.
--Pasirinkus duomenis įvesti rankiniu būdu, galima rinktis, ar pažymius generuoti atsitiktinai, ar vesti ranka, bei ar galutinį balą išvesti pagal vidurkį, ar pagal medianą.
--Pasirinkus generuoti failus, reikia įvesti norimą duomenų skaičių.
--Kiekvienos funckijos pabaigoje galima rinktis, ar baigti darbą. Jei norite vykdyti dar vieną funkciją, rinkitės "N".
+- Norima funkcija pasirenkama įvedant atitinkamą numerį
+- Vartotojui pateikiami pasirinkimai: (V/M) - čia "V" arba "v" - vidurkis, "M" arba "m" - mediana; (P/A) - čia "P" arba "p" - patys, "A" arba "a" - atsitiktinai; (T/N) - čia "T" arba "t" - taip, "N" arba "n" - ne.
+- Pasirinkus duomenis įvesti rankiniu būdu, galima rinktis, ar pažymius generuoti atsitiktinai, ar vesti ranka, bei ar galutinį balą išvesti pagal vidurkį, ar pagal medianą.
+- Pasirinkus generuoti failus, reikia įvesti norimą duomenų skaičių.
+- Kiekvienos funckijos pabaigoje galima rinktis, ar baigti darbą. Jei norite vykdyti dar vieną funkciją, rinkitės "N".
 
 ## v0.1
 Šioje programoje vartotojas įrašo studentų duomenis: vardą, pavardę, pažymių skaičių, pačius pažymius ir egzamino rezultatą. Vartotojas taip pat gali pasirinkti pažymius generuoti atsitiktinai. Toliau vartotojui pateikiamas pasirinkimas, kaip skaičiuoti galutinį rezultatą - naudojant vidurkį ar medianą. Vartotojui pasirinkus, programa apskaičiuoja galutinį rezultatą ir išveda jį į ekraną su atitinkamų studentų vardais ir pavardėmis. Programa realizuota naudojant du skirtingus konteinerių tipus: vektorius ir dinaminius masyvus.
@@ -68,19 +68,20 @@ Visos aukščiau išvardintos funkcijos apjungiamos į vieną programą. Kad bū
 Atliekamas programos spartos testas naudojant skirtingas studentų dalijimo į dvi kategorijas strategijas - kuriant tik vieną naują konteinerį n ir į jį sukeliant duomenis studentų, kurių galutinis balas mažesnis už 5.0, o kitus paliekant konteineryje stud, arba kuriant du naujus konteinerius.
 
 Abiejoms strategijoms naudoti algoritmai:
--std::sort - duomenys vektoriuje išdėstomi didėjimo tvarka pagal galutinį balą;
--std::find_if - randamas pirmas elementas vektoriuje, kurio galutinis balas lygus 5.0;
--std::move - į naują vektorių sukeliami elementai iki to, kurio galutinis balas lygus 5.0. Antroje strategijoje elementai, esantys po rasto elemento taip pat sukeliami į naują konteinerį;
--Pirmoje strategijoje naudotas std::erase - iš pirmojo konteinerio ištrinami elementai, perkelti į naują konteinerį.
+- std::sort - duomenys vektoriuje išdėstomi didėjimo tvarka pagal galutinį balą;
+- std::find_if - randamas pirmas elementas vektoriuje, kurio galutinis balas lygus 5.0;
+- std::move - į naują vektorių sukeliami elementai iki to, kurio galutinis balas lygus 5.0. Antroje strategijoje elementai, esantys po rasto elemento taip pat sukeliami į naują konteinerį;
+- Pirmoje strategijoje naudotas std::erase - iš pirmojo konteinerio ištrinami elementai, perkelti į naują konteinerį.
+
 ![image](https://user-images.githubusercontent.com/112683136/207106011-a61e5be5-7675-40a9-9431-cf5953126e77.png)
 
 Iš rezultatų matome, kad programa veikia greičiausiai su vienu list tipo konteineriu, ir apskritai list konteineriai yra spartens, nei vector, nepriklausomai nuo jų kiekio.
 
 Taip pat vykdytas programos spartos testas naudojant tik std::vector konteinerio tipą, tačiau jam taikant skirtingus algoritmus:
--Toks pat algoritmas, kaip atliekant spartos testą sukuriant tik vieną naują konteinerį;
--Dalis duomenų sukeliami į naują konteinerį naudojant std::stable_partition ir std::copy algoritmus. Į naują vektorių sukelti duomenys iš senojo pašalinami naudojant std::erase algoritmą;
--Toks pat algoritmas, kaip atliekant spartos testą sukuriant du naujus konteinerius;
- -Duomenys išskirstomi į du naujus vektorius naudojant std::partition_copy algoritmą.
+- Toks pat algoritmas, kaip atliekant spartos testą sukuriant tik vieną naują konteinerį;
+- Dalis duomenų sukeliami į naują konteinerį naudojant std::stable_partition ir std::copy algoritmus. Į naują vektorių sukelti duomenys iš senojo pašalinami naudojant std::erase algoritmą;
+- Toks pat algoritmas, kaip atliekant spartos testą sukuriant du naujus konteinerius;
+- Duomenys išskirstomi į du naujus vektorius naudojant std::partition_copy algoritmą.
  
 ![image](https://user-images.githubusercontent.com/112683136/207106643-ba833a48-724f-427c-96eb-22a89aa55114.png)
 
