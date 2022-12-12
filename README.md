@@ -1,6 +1,6 @@
 # v1.0
 
-##Naudojimo instrukcija
+#Naudojimo instrukcija
 - Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
 1. Duomenu vedimas ranka (v0.1)
 2. Duomenu skaitymas is failo(v0.2)
@@ -13,17 +13,17 @@
 -Pasirinkus generuoti failus, reikia įvesti norimą duomenų skaičių.
 -Kiekvienos funckijos pabaigoje galima rinktis, ar baigti darbą. Jei norite vykdyti dar vieną funkciją, rinkitės "N".
 
-##v0.1
+#v0.1
 Šioje programoje vartotojas įrašo studentų duomenis: vardą, pavardę, pažymių skaičių, pačius pažymius ir egzamino rezultatą. Vartotojas taip pat gali pasirinkti pažymius generuoti atsitiktinai. Toliau vartotojui pateikiamas pasirinkimas, kaip skaičiuoti galutinį rezultatą - naudojant vidurkį ar medianą. Vartotojui pasirinkus, programa apskaičiuoja galutinį rezultatą ir išveda jį į ekraną su atitinkamų studentų vardais ir pavardėmis. Programa realizuota naudojant du skirtingus konteinerių tipus: vektorius ir dinaminius masyvus.
 
 Pastaba: dinaminio masyvo kode yra klaida, jis iki galo neveikia.
 
-##v0.2
+#v0.2
 Toliau programą kuriame naudojant tik vektoriaus tipo konteinerį. Šioje versijoje v0.1 papildome galimybe studentų duomenis nuskaityti iš failo. Toliau atliekami veiksmai - studentų galutinio rezultato suskaičiavimas naudojant vidurkį arba medianą (priklausomai nuo vartotojo pasirinkimo). Gauti rezultatai tuomet yra išrašomi į naują failą.
 
 Atliktas programos refactoring'as - funkcijų ir main failai iškelti į atskirus .cpp failus, o struktūra - į .h failą.
 
-##v0.3
+#v0.3
 Šioje versijoje papildome v0.2 versiją galimybe studentų duomenų failą generuoti atsitiktinai. Generuojami 1 000, 10 000, 100 000, 1 000 000, 10 000 000 įrašų failai, priklausomai nuo vartotojo pasirinkimo. Toliau sugeneruoti failai yra nuskaitomi, vartotojui leidžiama pasirinkti, kaip skaičiuoti galutinį rezultatą. Jį suskaičiavus, studentai yra išskirstomi į dvi grupes: moksliukai(galutinis yra >=5) ir vargšiukai (galutinis yra < 5). Galiausiai, šios dvi grupės yra įrašomos į du naujus failus.
 
 Programa taip pat atlieka laiko matavimą failų generavimui, nuskaitymui, išskirstymui bei įrašymui į failus. Žemiau pateikti laiko matavimo rezultatai kiekvienam duomenų kiekiui.
@@ -53,14 +53,14 @@ Programa taip pat atlieka laiko matavimą failų generavimui, nuskaitymui, išsk
 
 Įdomus pastebėjimas: programos veikimo laikas generuojant 10000000 failų buvo net keturis kartus mažensis, kai kompiuteris buvo prijungtas prie krovimo laido - tada programa užtruko vos 5min.
 
-##v0.4
+#v0.4
 
 0.3 versiją papildome galimybe atlikti failų įrašymo spartos testą tarp skirtingų konteinerių tipų: std::list ir std::vector. Spartos testas matuoja failų nuskaitymo ir duomenų išskirstymo į dvi grupes pagal galutinį balą laiką.
 
 Žemiau pateiktoje iškarpoje yra testavimo rezultatai. Juose matome, jog, nepriklausomai nuo duomenų kiekio, programa darbą atliko greičiau su std::list tipo struktūra.
 ![image](https://user-images.githubusercontent.com/112683136/207102862-7a929ce1-c764-4cca-bc73-28486569397d.png)
 
-##v1.0
+#v1.0
 Visos aukščiau išvardintos funkcijos apjungiamos į vieną programą. Kad būtų paprasčiau skaityti kodą atliktas papildomas refactoring'as išskadant funkcijas pagal jų tipą. Taip pat vartotojo patogumo dėlei programa pakeista iš klausimų "Ar norite daryti ....", į meniu pasirinkimus. 
 
 Atliekamas programos spartos testas naudojant skirtingas studentų dalijimo į dvi kategorijas strategijas - kuriant tik vieną naują konteinerį n ir į jį sukeliant duomenis studentų, kurių galutinis balas mažesnis už 5.0, o kitus paliekant konteineryje stud, arba kuriant du naujus konteinerius.
