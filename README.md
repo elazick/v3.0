@@ -1,12 +1,13 @@
 # v1.0
 
 ## Naudojimo instrukcija
-- Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
+Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
 1. Duomenu vedimas ranka (v0.1)
 2. Duomenu skaitymas is failo(v0.2)
 3. Failu generavimas(v0.3)
 4. Spartos testas(v0.4)
 5. Spartos testas su skirtingais algoritmais(v0.5)
+
 -Norima funkcija pasirenkama įvedant atitinkamą numerį
 -Vartotojui pateikiami pasirinkimai: (V/M) - čia "V" arba "v" - vidurkis, "M" arba "m" - mediana; (P/A) - čia "P" arba "p" - patys, "A" arba "a" - atsitiktinai; (T/N) - čia "T" arba "t" - taip, "N" arba "n" - ne.
 -Pasirinkus duomenis įvesti rankiniu būdu, galima rinktis, ar pažymius generuoti atsitiktinai, ar vesti ranka, bei ar galutinį balą išvesti pagal vidurkį, ar pagal medianą.
@@ -58,6 +59,7 @@ Programa taip pat atlieka laiko matavimą failų generavimui, nuskaitymui, išsk
 0.3 versiją papildome galimybe atlikti failų įrašymo spartos testą tarp skirtingų konteinerių tipų: std::list ir std::vector. Spartos testas matuoja failų nuskaitymo ir duomenų išskirstymo į dvi grupes pagal galutinį balą laiką.
 
 Žemiau pateiktoje iškarpoje yra testavimo rezultatai. Juose matome, jog, nepriklausomai nuo duomenų kiekio, programa darbą atliko greičiau su std::list tipo struktūra.
+
 ![image](https://user-images.githubusercontent.com/112683136/207102862-7a929ce1-c764-4cca-bc73-28486569397d.png)
 
 ## v1.0
