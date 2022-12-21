@@ -88,7 +88,7 @@ Taip pat vykdytas programos spartos testas naudojant tik std::vector konteinerio
 Čia pastebime, jog tiek stable_partition ir copy, tiek partition_copy algoritmų pritaikymas yra efektyvesnis už algoritmus, naudotus pirmame spartos teste, kai duomenų kiekis yra 1000, 10000 arba 1000000. Kai turime 100000 arba 10000000 duomenų akivaizdžiai sparčiausias algoritmas yra partition_copy, o visi kiti algoritmai užtrunka maždaug tiek pat laiko. 
 
 
-# v1.1
+## v1.1
 
 Šioje versijoje studento tipas pakeičiamas iš struktūros į klasę ir atitinkamai pritaikytos v1.0 funkcijos. Atliktas spartos testas lyginant greičius tarp programos, naudojančios struktūrą, ir programos, naudojančios klasę.
 
