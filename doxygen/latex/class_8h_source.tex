@@ -1,0 +1,134 @@
+\hypertarget{class_8h_source}{}\doxysection{class.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CLASS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CLASS\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <iterator>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <numeric>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <istream>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classzmogus}{zmogus}} \{}
+\DoxyCodeLine{26 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{27     std::string vardas;}
+\DoxyCodeLine{28     std::string pavarde;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{classzmogus}{zmogus}}() \{\}; \textcolor{comment}{//def konstruktorius}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{comment}{//getteriai}}
+\DoxyCodeLine{34     \textcolor{keyword}{inline} std::string getVardas()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} vardas; \}}
+\DoxyCodeLine{35     \textcolor{keyword}{inline} std::string getPavarde()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} pavarde; \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{//setteriai}}
+\DoxyCodeLine{38     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setVardas(std::string \_vardas) \{ vardas = \_vardas; \}}
+\DoxyCodeLine{39     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setPavarde(std::string \_pavarde) \{ pavarde = \_pavarde; \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \mbox{\hyperlink{classzmogus}{\string~zmogus}}() \{\}; \textcolor{comment}{//destruktorius}}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{class }\mbox{\hyperlink{classstudentas}{studentas}} : \textcolor{keyword}{public} \mbox{\hyperlink{classzmogus}{zmogus}} \{}
+\DoxyCodeLine{45     std::vector<int> pazymiai;}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} paz\_sk;}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} sum;}
+\DoxyCodeLine{48     \textcolor{keywordtype}{double} egzas;}
+\DoxyCodeLine{49     \textcolor{keywordtype}{double} galutinis;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \mbox{\hyperlink{classstudentas}{studentas}}() : galutinis(0) \{ \} \textcolor{comment}{//default konstruktorius}}
+\DoxyCodeLine{53     \mbox{\hyperlink{classstudentas}{studentas}}(std::string vardas, std::string pavarde);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{comment}{//getteriai}}
+\DoxyCodeLine{56     \textcolor{keyword}{inline} std::vector<int> getPazymiai()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} pazymiai; \}}
+\DoxyCodeLine{57     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} getEgzas()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} egzas; \}}
+\DoxyCodeLine{58     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} getSum()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} sum; \}}
+\DoxyCodeLine{59     \textcolor{keyword}{inline} \textcolor{keywordtype}{double} getRezultatas()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} galutinis; \}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{comment}{//setteriai}}
+\DoxyCodeLine{62     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setPazymiai(std::vector<int>pazymiai) \{ studentas::pazymiai = pazymiai; \}}
+\DoxyCodeLine{63     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setSum(\textcolor{keywordtype}{int} sum) \{ studentas::sum = sum; \}}
+\DoxyCodeLine{64     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setEgzas(\textcolor{keywordtype}{int} egzas) \{ studentas::egzas = egzas; \}}
+\DoxyCodeLine{65     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setRezultatas(\textcolor{keywordtype}{double} galutinis) \{ studentas::galutinis = galutinis; \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{comment}{//copy constructor}}
+\DoxyCodeLine{68     \mbox{\hyperlink{classstudentas}{studentas}}(\textcolor{keyword}{const} \mbox{\hyperlink{classstudentas}{studentas}}\& other) :}
+\DoxyCodeLine{69         pazymiai(other.pazymiai),}
+\DoxyCodeLine{70         egzas(other.egzas),}
+\DoxyCodeLine{71         paz\_sk(other.paz\_sk),}
+\DoxyCodeLine{72         sum(other.sum),}
+\DoxyCodeLine{73         galutinis(other.galutinis) \{}
+\DoxyCodeLine{74             }
+\DoxyCodeLine{75             vardas = other.getVardas();}
+\DoxyCodeLine{76             pavarde = other.getPavarde();}
+\DoxyCodeLine{77     \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{comment}{//copy assignment operator}}
+\DoxyCodeLine{80     \mbox{\hyperlink{classstudentas}{studentas}}\& operator = (\textcolor{keyword}{const} \mbox{\hyperlink{classstudentas}{studentas}}\& other) \{}
+\DoxyCodeLine{81         vardas = other.vardas;}
+\DoxyCodeLine{82         pavarde = other.pavarde;}
+\DoxyCodeLine{83         pazymiai = other.pazymiai;}
+\DoxyCodeLine{84         paz\_sk = other.paz\_sk;}
+\DoxyCodeLine{85         sum = other.sum;}
+\DoxyCodeLine{86         galutinis = other.galutinis;}
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \mbox{\hyperlink{classstudentas}{\string~studentas}}() \{ \}; \textcolor{comment}{//destruktorius}}
+\DoxyCodeLine{91 \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{keyword}{class }\mbox{\hyperlink{class_timer}{Timer}} \{}
+\DoxyCodeLine{96 \textcolor{keyword}{private}:}
+\DoxyCodeLine{97     std::chrono::time\_point<std::chrono::high\_resolution\_clock> start;}
+\DoxyCodeLine{98 \textcolor{keyword}{public}:}
+\DoxyCodeLine{99     \mbox{\hyperlink{class_timer}{Timer}}() : start\{ std::chrono::high\_resolution\_clock::now() \} \{\}}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} reset() \{}
+\DoxyCodeLine{102         start = std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{double} elapsed()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{106         \textcolor{keywordflow}{return} std::chrono::duration<double>}
+\DoxyCodeLine{107             (std::chrono::high\_resolution\_clock::now() -\/ start).count();}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 \textcolor{keywordtype}{double} count\_galutinis(std::vector<int> pazymiai, \textcolor{keywordtype}{int} sum, \textcolor{keywordtype}{int} egzas);}
+\DoxyCodeLine{111 \textcolor{keywordtype}{double} count\_mediana(std::vector<int>pazymiai, \textcolor{keywordtype}{int} egzas);}
+\DoxyCodeLine{112 std::string egzo\_rezultatas();}
+\DoxyCodeLine{113 std::string pazGeneravimas();}
+\DoxyCodeLine{114 \textcolor{keywordtype}{bool} palyginimas(\textcolor{keyword}{const} \mbox{\hyperlink{classstudentas}{studentas}}\& a, \textcolor{keyword}{const} \mbox{\hyperlink{classstudentas}{studentas}}\& b);}
+\DoxyCodeLine{115 std::vector<int> vedimas\_ranka(std::vector<int>duom);}
+\DoxyCodeLine{116 std::vector<int> auto\_generavimas(std::vector<int>duom);}
+\DoxyCodeLine{117 \mbox{\hyperlink{classstudentas}{studentas}} stud();}
+\DoxyCodeLine{118 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} countWordsInString(std::string \textcolor{keyword}{const}\& str);}
+\DoxyCodeLine{119 std::vector<studentas> read\_from\_file(std::string name, std::vector<studentas>stud, std::string metodas);}
+\DoxyCodeLine{120 \textcolor{keywordtype}{void} write\_to\_file(std::vector<studentas>duom);}
+\DoxyCodeLine{121 \textcolor{keywordtype}{void} stud\_gen(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{122 std::vector<studentas> gen\_nuskaitymas(std::vector<studentas> duom, \textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{123 \textcolor{keywordtype}{void} gen\_irasymas(std::vector<studentas> duom, std::string a);}
+\DoxyCodeLine{124 \textcolor{keywordtype}{double} list1(\textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{125 \textcolor{keywordtype}{double} list2(\textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{126 \textcolor{keywordtype}{double} vector1(\textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{127 \textcolor{keywordtype}{double} vector2(\textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{128 \textcolor{keywordtype}{double} st\_part(\textcolor{keywordtype}{int} a, std::string metodas);}
+\DoxyCodeLine{129 \textcolor{keywordtype}{double} partition(\textcolor{keywordtype}{int} a, std::string metodas);}
+
+\end{DoxyCode}
