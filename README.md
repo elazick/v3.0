@@ -126,4 +126,8 @@ Iš rezultatų matome, kad programa užtrunka praktiškai tiek pat laiko, neprik
 
 Programa papildyta pagal trijų taisyklę - pridėtas destruktorius, kopijavimo konstruktorius ir copy assignment operatorius.
 
+## v1.5
+
+Studento klasė išskaidyta į dvi - bazinę abstrakčią klasę žmogus ir paveldėtą klasę studentas.
+
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
