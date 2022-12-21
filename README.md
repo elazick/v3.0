@@ -122,4 +122,8 @@ Ox:
 
 Iš rezultatų matome, kad programa užtrunka praktiškai tiek pat laiko, nepriklausomai nuo optimizacijos lygio.
 
+## v1.2
+
+Programa papildyta pagal trijų taisyklę - pridėtas destruktorius, kopijavimo konstruktorius ir copy assignment operatorius.
+
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
