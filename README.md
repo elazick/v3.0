@@ -13,7 +13,7 @@ Klasė:
 ![image](https://user-images.githubusercontent.com/112683136/208145531-330a9d46-d752-4602-8745-d48405c9f431.png)
 
 
-
+Iš rezultatų matome, kad programa veikia beveik tokiu pačiu greičiu naudojant tiek struktūrą, tiek klasę.
 
 Toliau atlikti testai su kompiliatoriaus optimizavimo lygiais:
 
@@ -30,5 +30,5 @@ Ox:
 
 ![image](https://user-images.githubusercontent.com/112683136/208149865-98b80cbf-54d9-4fe1-8811-eb101058e9a8.png)
 
-
+Iš rezultatų matome, kad programa užtrunka praktiškai tiek pat laiko, nepriklausomai nuo optimizacijos lygio. 
 
