@@ -1,4 +1,4 @@
-# v1.0
+# v2.0
 
 ## Naudojimo instrukcija
 Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
@@ -129,5 +129,9 @@ Programa papildyta pagal trijų taisyklę - pridėtas destruktorius, kopijavimo 
 ## v1.5
 
 Studento klasė išskaidyta į dvi - bazinę abstrakčią klasę žmogus ir paveldėtą klasę studentas.
+
+## v2.0 
+
+Sukurta programos dokumentacija naudojant Doxygen
 
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
