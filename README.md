@@ -94,11 +94,13 @@ Taip pat vykdytas programos spartos testas naudojant tik std::vector konteinerio
 
 Struktūra:
 
-image
+![image](https://user-images.githubusercontent.com/112683136/208912118-f524c58a-ff18-41c1-b7a4-df92351a1730.png)
+
 
 Klasė:
 
-image
+![image](https://user-images.githubusercontent.com/112683136/208912162-6d484dd7-d6ba-4b8d-902e-7b98bcab1901.png)
+
 
 Iš rezultatų matome, kad programa veikia beveik tokiu pačiu greičiu naudojant tiek struktūrą, tiek klasę.
 
@@ -106,15 +108,18 @@ Toliau atlikti testai su kompiliatoriaus optimizavimo lygiais:
 
 O1:
 
-image
+![image](https://user-images.githubusercontent.com/112683136/208912222-1adc4631-067c-4b2e-b4cc-769450389342.png)
+
 
 O2:
 
-image
+![image](https://user-images.githubusercontent.com/112683136/208912253-7dfc1199-111e-476f-a742-a1176e5d7c74.png)
 
 Ox:
 
-image
+![image](https://user-images.githubusercontent.com/112683136/208912282-f7819f06-28f0-494e-be51-309ca99be4af.png)
+
 
 Iš rezultatų matome, kad programa užtrunka praktiškai tiek pat laiko, nepriklausomai nuo optimizacijos lygio.
+
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
