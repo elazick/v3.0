@@ -1,4 +1,4 @@
-# vę.0
+# v3.0
 
 ## Naudojimo instrukcija
 
