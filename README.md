@@ -140,4 +140,7 @@ Sukurta programos dokumentacija naudojant Doxygen
 ## v3.0 
 
 Programa paruošta diegimui - paruošti setup.exe ir setup.msi failai.
+
+##
+
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
