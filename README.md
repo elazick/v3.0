@@ -1,6 +1,9 @@
-# v2.0
+# vę.0
 
 ## Naudojimo instrukcija
+
+Parsisiųskite Release aplanką. Jį atsidarius paleiskite bet kurią iš setup programų. Praeikite instaliacijos žingsnius (spauskite tęsti). Kai programa bus įrašyta, ją paleisti galėsite iš Start menu, taip pat ją rasite savo darbalaukyje (Run v3.0).
+
 Paledus programą vartotojas gaus sąrašą įmanomų funkcijų:
 1. Duomenu vedimas ranka (v0.1)
 2. Duomenu skaitymas is failo(v0.2)
@@ -134,4 +137,7 @@ Studento klasė išskaidyta į dvi - bazinę abstrakčią klasę žmogus ir pave
 
 Sukurta programos dokumentacija naudojant Doxygen
 
+## v3.0 
+
+Programa paruošta diegimui - paruošti setup.exe ir setup.msi failai.
 Testavimo sistemos parametrai: CPU 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz 2.80 GHz; RAM 16GB; SSD.
